@@ -1,0 +1,89 @@
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.game-container {
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-template-rows: repeat(3, 100px);
+  gap: 5px;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #f9f9f9;
+}
+
+.status {
+  margin: 20px 0;
+  font-size: 20px;
+  font-weight: bold;
+  color: #555;
+}
+
+.reset-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.reset-button:hover {
+  background-color: #0056b3;
+}
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff; /* Default background */
+  border: 2px solid #ddd;
+  font-size: 32px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cell:hover {
+  background-color: #f9f9f9; /* Light hover effect */
+}
+
+/* Add new styles for X and O */
+.cell.x {
+  background-color: #d1e7dd; /* Light green for X */
+  color: #0f5132; /* Dark green text for X */
+}
+
+.cell.o {
+  background-color: #f8d7da; /* Light red for O */
+  color: #842029; /* Dark red text for O */
+}
